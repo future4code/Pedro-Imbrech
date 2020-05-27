@@ -52,7 +52,12 @@ div img {
 
 .container {
     height: 500px;
+    padding: 50px;
     text-align: center;
+}
+
+.text-container1 {
+    margin-top: 50px;
 }
 
 .icone {
