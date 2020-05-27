@@ -114,7 +114,6 @@ td button {
     height: 100px;
 }
 
-
 #back-button {
     background-color: white;
     width: 100px;
@@ -127,4 +126,8 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+.botton1-comprar {
+    margin-top: 120px;
 }
