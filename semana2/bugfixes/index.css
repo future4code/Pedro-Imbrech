@@ -26,6 +26,14 @@ button:focus {
     color: white;
 }
 
+button:hover {
+    background-color: #c44f00;
+}
+
+button:active {
+    color: tomato;
+}
+
 img {
     width: 100px;
 }
