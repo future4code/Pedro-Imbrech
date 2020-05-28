@@ -142,3 +142,7 @@ td button {
     margin-left: 500px;
     margin-right: 500px;
 }
+
+td {
+    font-weight: bold;
+}
