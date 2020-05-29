@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.content1 {
+    background-color: #67808B;
+    padding: 50px;
+}
+
+.content2 {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+.head1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 50px;
+    height: 50px;
+    background-color: red;
+    border: 50px;
+}
