@@ -1,0 +1,105 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1A1A1A;
+}
+
+.header0 {
+    width: 1200px;
+    margin: 20px;
+}
+
+.header1 {
+    width: 1100px;
+    padding: 50px;
+    background-color: #009900;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.txtcentral-header {
+    color: rgb(223, 223, 223);
+    font-family: Helvetica, sans-serif;
+}
+
+.subheader {
+    margin-left: 20px;
+    width: 1100px;
+    padding: 20px;
+    background-color: #006600;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #009900;
+}
+
+.register-inicio {
+    color: #009900;
+}
+
+button.register:active {
+    background-color: green;
+}
+
+.register-inicio:hover {
+    color: white;
+}
+
+.entre-graca:hover {
+    color: white;
+}
+
+.formu0 {}
+
+.formu1 {
+    width: 50px;
+    height: 70px;
+    background-color: #272727;
+    padding: 200px;
+    border-radius: 20px;
+}
+
+.button-degraca {
+    width: 150px;
+    height: 50px;
+    background-color: #860000;
+    border-radius: 20px;
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5 {
+    margin: 20px;
+    width: 150px;
+    padding: 20px;
+    background-color: #006600;
+    border-radius: 10px;
+}
+
+.link-saida {
+    color: rgb(255, 255, 255);
+}
+
+.link-saida:hover {
+    color: green;
+}
+
+
+/*ventas */
+
+.body-ventas {
+    background: rgb(223, 223, 223);
+}
+
+.historicovendas {
+    color: white;
+}
