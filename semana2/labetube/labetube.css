@@ -77,8 +77,24 @@ footer {
     width: 300px;
     height: 75px;
     font-weight: bold;
+    color: black;
+}
+
+.paragrafos {
+    text-decoration: none;
+    color: black;
 }
 
 .titulodovideo {
     padding: 30px;
+}
+
+.main-video {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 97px - 97px);
+}
+
+.main-0 {
+    min-height: calc(100vh - 97px - 97px);
 }
