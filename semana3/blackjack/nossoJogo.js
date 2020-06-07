@@ -24,4 +24,38 @@ As regras do jogo são as seguintes:
 - Os jogadores compram cartas do baralho. Ao comprar uma carta do baralho, ela pode ser de qualquer uma das 52 cartas, com probabilidade igual.
 - As cartas tem um valor de acordo com seu número (a carta 4♣️ tem valor 4, e a carta 9♦️ tem valor 9). As cartas J, Q e K tem valor 10, e a carta A tem valor 11.
 - O jogo inicia com cada jogador (usuário e computador) recebendo 2 cartas. A pontuação de cada jogador é a soma do valor das suas cartas.
-- O jogador com a maior pontuação ganha a rodada.*/
+- O jogador com a maior pontuação ganha a rodada.
+*/
+
+
+//3 - Se o usuário responder `cancel`, imprime uma mensagem no console "O jogo acabou".
+
+if (confirm("Quer iniciar uma nova rodada?")) {
+    console.log("Bem vindo ao jogo de Blackjack!")
+
+    //4 - Se o usuário responder `Ok`, o programa deve iniciar uma nova rodada.
+
+    const carta = comprarCarta();
+    // Sorteia uma carta. Por exemplo, o rei de ouros
+
+    console.log("Usuário - cartas: " + carta.texto + carta.texto + " pontuação " + (carta.valor + carta.valor))
+        // imprime o texto da carta. Nesse caso: "K♦️"
+
+    console.log("Computador - cartas: " + carta.texto + carta.texto + " pontuação " + (carta.valor + carta.valor))
+
+    if (carta.valor + carta.valor === carta.valor + carta.valor) {
+        console.log("Empate!")
+    } else if (carta.valor + carta.valor > carta.valor + carta.valor) {
+        console.log("O usuário ganhou!")
+    } else if (carta.valor + carta.valor < carta.valor + carta.valor) {
+        console.log("O computador ganhou!")
+    }
+
+
+
+
+
+
+} else {
+    console.log("O jogo acabou")
+}
