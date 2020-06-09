@@ -23,6 +23,7 @@ header {
 .header-3 {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 15px;
     width: 1200px;
     border-radius: 50px;
@@ -33,11 +34,45 @@ header {
 .ph1 {
     margin-left: 40px;
     font-family: 'Pacifico', cursive;
-    color: white;
+    color: rgb(59, 38, 68);
     justify-content: flex-end;
 }
 
-.form-1 {
+main {
     display: flex;
     justify-content: center;
+    min-height: calc(100vh - 126px - 60px);
+}
+
+.main-central {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1500px;
+}
+
+.car {
+    font-family: 'Pacifico', cursive;
+    color: rgb(59, 38, 68);
+    padding: 20px;
+    height: 400px;
+    width: 150px;
+    margin: 20px;
+    border-radius: 5px;
+    background: #f7d4ef;
+    box-shadow: inset 19px 19px 42px #a18a9b, inset -19px -19px 42px #ffffff;
+}
+
+.car:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 153, 212);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    background: #f7d4ef;
+    box-shadow: -8px -8px 16px #a18a9b, 8px 8px 16px #ffffff;
 }
