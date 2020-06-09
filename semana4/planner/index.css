@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7d4ef;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    background-color: #f7d4ef;
+    padding: 20px;
+}
+
+.header-3 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    width: 1200px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffe3ff, #debfd7);
+    box-shadow: 43px 43px 86px #a38c9e, -43px -43px 86px #ffffff;
+}
+
+.ph1 {
+    margin-left: 40px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    justify-content: flex-end;
+}
+
+.form-1 {
+    display: flex;
+    justify-content: center;
+}
