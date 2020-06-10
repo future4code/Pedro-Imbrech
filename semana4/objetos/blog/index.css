@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffd6d6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd6d6;
+    padding: 30px;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    border-radius: 65px;
+    background: #ffd6d6;
+    box-shadow: 5px 5px 18px #b09494, -5px -5px 18px #ffffff;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    color: white;
+}
+
+.superbox {
+    display: flex;
+    justify-content: center;
+}
