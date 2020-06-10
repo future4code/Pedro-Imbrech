@@ -22,10 +22,15 @@
 
                     <form action="">
                         <label for="">Nova Tarefa</label>
-                        <input type="text">
+
+
+
+                        <input type="text" value="" id="meu-input">
+
+
 
                         <select name="diadasemana" id="diadasemana">
-                        <option  value="1" >Segunda-Feira</option>
+                        <option id="segunda"  value="1" >Segunda-Feira</option>
                         <option value="2" >Terça-Feira</option>
                         <option value="3" >Quarta-Feira</option>
                         <option value="4" >Quinta-Feira</option>
@@ -34,7 +39,12 @@
                         <option value="7" >Domingo</option>
                                             					
                     </select>
-                        <button>Criar Tarefa</button>
+
+
+                        <button onclick="adicionaItem()">Criar Tarefa</button>
+
+
+
                     </form>
                 </div>
             </div>
@@ -46,13 +56,30 @@
 
     <main>
         <div class="main-central ">
-            <div class="car">Segunda-Feira</div>
-            <div class="car">Terça-Feira</div>
-            <div class="car">Quarta-Feira</div>
-            <div class="car">Quinta-Feira</div>
-            <div class="car"> Sexta-Feira</div>
-            <div class="car">Sábadoa</div>
-            <div class="car">Domingo</div>
+
+            <div class="car">Segunda-Feira
+                <ul id="lista-de-itens"></ul>
+            </div>
+
+            <div class="car">Terça-Feira
+                <ul id="lista-de-itens2"></ul>
+            </div>
+
+            <div class="car">Quarta-Feira
+                <ul id="lista-de-itens3"></ul>
+            </div>
+            <div class="car">Quinta-Feira
+                <ul id="lista-de-itens4"></ul>
+            </div>
+            <div class="car"> Sexta-Feira
+                <ul id="lista-de-itens5"></ul>
+            </div>
+            <div class="car">Sábadoa
+                <ul id="lista-de-itens6"></ul>
+            </div>
+            <div class="car">Domingo
+                <ul id="lista-de-itens7"></ul>
+            </div>
         </div>
     </main>
 
