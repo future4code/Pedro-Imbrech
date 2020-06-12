@@ -23,10 +23,14 @@ header {
 .header-3 {
     display: flex;
     justify-content: flex-start;
-<<<<<<< HEAD
-=======
+
     align-items: center;
->>>>>>> f039d383b1fefe6062294c219e282754cdb6f79c
+
+
+
+    align-items: center;
+
+
     padding: 15px;
     width: 1200px;
     border-radius: 50px;
@@ -37,7 +41,8 @@ header {
 .ph1 {
     margin-left: 40px;
     font-family: 'Pacifico', cursive;
-<<<<<<< HEAD
+
+
     color: white;
     justify-content: flex-end;
 }
@@ -45,7 +50,10 @@ header {
 .form-1 {
     display: flex;
     justify-content: center;
-=======
+
+
+
+
     color: rgb(59, 38, 68);
     justify-content: flex-end;
 }
@@ -87,5 +95,6 @@ footer {
     border-radius: 5px;
     background: #f7d4ef;
     box-shadow: -8px -8px 16px #a18a9b, 8px 8px 16px #ffffff;
->>>>>>> f039d383b1fefe6062294c219e282754cdb6f79c
+
+
 }

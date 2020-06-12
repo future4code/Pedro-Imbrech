@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffd6d6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd6d6;
+    padding: 30px;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    border-radius: 65px;
+    background: #ffd6d6;
+    box-shadow: 5px 5px 18px #b09494, -5px -5px 18px #ffffff;
+}
+
+#header-2 {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.superbox {
+    display: flex;
+    justify-content: center;
+}
+
+#texto1 {
+    display: flex;
+    justify-content: center;
+}
+
+.texto1-1 {
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+#texto2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+#newpost {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 120px;
+    padding: 20px;
+}
+
+#box-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#campos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+#textarea {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 24px;
+    background: #ffe5e5;
+    box-shadow: 5px 5px 10px #d9c3c3, -5px -5px 10px #ffffff;
+}
+
+#textareain {
+    border: none
+}
+
+#button0 {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+#button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 150px;
+    height: 50px;
+    border-radius: 65px;
+    background: #ffd6d6;
+    box-shadow: 5px 5px 18px #b09494, -5px -5px 18px #ffffff;
+    color: darkmagenta;
+}
+
+main {
+    min-height: calc(100vh -127px -60px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 65px;
+    background: #ffd6d6;
+    box-shadow: 5px 5px 18px #b09494, -5px -5px 18px #ffffff;
+    color: darkmagenta;
+}
