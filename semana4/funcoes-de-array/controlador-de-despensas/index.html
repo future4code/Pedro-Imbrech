@@ -20,11 +20,12 @@
                 <br>
                 <br>
                 <label for="Valor ">Valor</label>
-                <input type="text">
+                <input type="text" id="primercampo" value="">
                 <br>
                 <br>
                 <label for="">Tipo(Casa, Viagem, Roles, Outros)</label>
-                <select name="" id="">
+                <select name="" id="tercercampo">
+                    <option value=""> </option>
     <option value="">Despensa de casa</option>
     <option value="">Despensa de festa</option>
     <option value="">Despensa de Transporte</option>
@@ -32,12 +33,20 @@
                 <br>
                 <br>
                 <label for="">Descricao</label>
-                <input type="text">
+                <input type="text" id="segundocampo">
                 <br>
                 <br>
-                <button>Cadastrar Despensa</button>
+
+                <input type="button" value="Cadastrar Despensa" onClick="cadastroLimpo()">
             </div>
         </div>
+
+
+
+
+
+
+
 
         <div class="con-des">
             <div class="con-des1">
@@ -45,23 +54,27 @@
 
                 <br>
                 <label for="">Tipo(Casa, Viagem, Roles, Outros)</label>
-                <select name="" id="">
+                <select name="" id='limpatercerfiltro'>
+                    <option value=""> </option>        
     <option value="">Despensa de casa</option>
     <option value="">Despensa de festa</option>
     <option value="">Despensa de Transporte</option>
     </select>
                 <br>
                 <br>
-                <label for="Valor ">Valor Manimo</label><input type="text">
+                <label for="Valor ">Valor Manimo</label>
+                <input type="text" id="limparprimerfiltro">
                 <br>
                 <br>
-                <label for="Valor ">Valor Maximo</label><input type="text">
+                <label for="Valor ">Valor Maximo</label>
+                <input type="text" id='limpasegundofiltro'>
                 <br>
                 <br>
                 <button>Filtrar</button>
                 <br>
                 <br>
-                <button>Limpar Filtros</button>
+                <input type="button" value="Limpar Filtros" onClick="limparDespensas()">
+
             </div>
         </div>
 
