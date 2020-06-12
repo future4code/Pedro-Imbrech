@@ -23,7 +23,10 @@ header {
 .header-3 {
     display: flex;
     justify-content: flex-start;
+
+
     align-items: center;
+
     padding: 15px;
     width: 1200px;
     border-radius: 50px;
@@ -34,6 +37,15 @@ header {
 .ph1 {
     margin-left: 40px;
     font-family: 'Pacifico', cursive;
+
+    color: white;
+    justify-content: flex-end;
+}
+
+.form-1 {
+    display: flex;
+    justify-content: center;
+
     color: rgb(59, 38, 68);
     justify-content: flex-end;
 }
@@ -75,4 +87,6 @@ footer {
     border-radius: 5px;
     background: #f7d4ef;
     box-shadow: -8px -8px 16px #a18a9b, 8px 8px 16px #ffffff;
+
+
 }
