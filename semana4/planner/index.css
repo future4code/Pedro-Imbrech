@@ -24,8 +24,12 @@ header {
     display: flex;
     justify-content: flex-start;
 
+    align-items: center;
+
+
 
     align-items: center;
+
 
     padding: 15px;
     width: 1200px;
@@ -38,6 +42,7 @@ header {
     margin-left: 40px;
     font-family: 'Pacifico', cursive;
 
+
     color: white;
     justify-content: flex-end;
 }
@@ -45,6 +50,9 @@ header {
 .form-1 {
     display: flex;
     justify-content: center;
+
+
+
 
     color: rgb(59, 38, 68);
     justify-content: flex-end;

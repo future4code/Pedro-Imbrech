@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <source>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="order1">
+        <div class="con-des">
+            <div class="con-des1">
+                <h1>Controlador de despensas </h1>
+                <h3>Cadastrar despensas</h3>
+                <br>
+                <br>
+                <label for="Valor ">Valor</label>
+                <input type="text" id="primercampo" value="">
+                <br>
+                <br>
+                <label for="">Tipo(Casa, Viagem, Roles, Outros)</label>
+                <select name="" id="tercercampo">
+                    <option value=""> </option>
+    <option value="">Despensa de casa</option>
+    <option value="">Despensa de festa</option>
+    <option value="">Despensa de Transporte</option>
+    </select>
+                <br>
+                <br>
+                <label for="">Descricao</label>
+                <input type="text" id="segundocampo">
+                <br>
+                <br>
+
+                <input type="button" value="Cadastrar Despensa" onClick="cadastroLimpo()">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="con-des">
+            <div class="con-des1">
+                <h1>Despensas Detalhadas </h1>
+
+                <br>
+                <label for="">Tipo(Casa, Viagem, Roles, Outros)</label>
+                <select name="" id='limpatercerfiltro'>
+                    <option value=""> </option>        
+    <option value="">Despensa de casa</option>
+    <option value="">Despensa de festa</option>
+    <option value="">Despensa de Transporte</option>
+    </select>
+                <br>
+                <br>
+                <label for="Valor ">Valor Manimo</label>
+                <input type="text" id="limparprimerfiltro">
+                <br>
+                <br>
+                <label for="Valor ">Valor Maximo</label>
+                <input type="text" id='limpasegundofiltro'>
+                <br>
+                <br>
+                <button>Filtrar</button>
+                <br>
+                <br>
+                <input type="button" value="Limpar Filtros" onClick="limparDespensas()">
+
+            </div>
+        </div>
+
+        <div class="con-des">
+            <div class="con-des1">
+                <h1>Extrato </h1>
+                <h4>Valor Total</h4>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
