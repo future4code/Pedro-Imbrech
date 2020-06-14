@@ -232,3 +232,23 @@ function calculatriangulo(a, b, c) {
 }
 
 console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+let numero1 = Number(prompt("insere um primero numero"))
+let numero2 = Number(prompt("insere um segundo numero"))
+
+if (numero1 > numero2) {
+    console.log(" o maior e: " + numero1)
+}
+if (numero1 < numero2) {
+    console.log(" e maior  e : " + numero2)
+}
+
+console.log("15 nao e divisivel por 30")
+
+console.log("30 nao e divisivel por 15")
