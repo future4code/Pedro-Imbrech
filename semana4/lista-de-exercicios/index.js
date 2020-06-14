@@ -18,3 +18,14 @@ valor impresso no console: Se o valor da cotação for de 5 reais, o resultado s
 */
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*(Exercício 2)temos uma função nômade chamada (InvesteDinheiro) que recebe dois parâmetros (tipoDeInvestimento y valor)
+essa função incluirá uma declaração chamada switch, que é responsável por avaliar uma expressão
+comparando o valor dessa expressão com várias instâncias de case, cada uma representando um
+tipos de investimento "poupanca" , "renda fixa", "CDB", "Acoes",  a instrução return valorAposInvestimento
+encerra a execução da função e especifica um valor a ser retornado para quem chama a função.
+
+valor impresso no console: Se e Poupança 154.5 e 206
+*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
