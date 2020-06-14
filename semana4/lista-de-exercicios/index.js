@@ -53,3 +53,36 @@ usar for...of, criaremos duas instruções if que nos dirão qual é o maior nú
 
 valor impresso no console: -10 menor e 1590 maior
 */
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*
+
+//Exercícios de Lógica de Programação
+//Sem rodar nenhum código, diga quais são os valores das expressões lógicas abaixo:
+
+(Exercicio 1)
+const booleano1 = true
+const booleano2 = false
+const booleano3 = !booleano2
+const booleano4 = !booleano3
+
+booleano1 && booleano2 && !booleano4
+FALSE 
+
+(booleano1 && booleano2) || !booleano3
+FALSE 
+
+(booleano2 || booleano3) && (booleano4 || booleano1)
+TRUE 
+
+!(booleano2 && booleano3) || !(booleano1 && booleano3)
+TRUE 
+
+!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+TRUE
+
+*/
