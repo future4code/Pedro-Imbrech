@@ -46,3 +46,10 @@ Quantidade total de numeros 14
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*(Exerxio 4)Usando o for ... of  simplificamos a leitura dos elementos de uma array neste caso
+fizemos a declaração do seguinte array numeros  para ler array numeros  nós vamos 
+usar for...of, criaremos duas instruções if que nos dirão qual é o maior número da array e qual é o menor.
+
+valor impresso no console: -10 menor e 1590 maior
+*/
