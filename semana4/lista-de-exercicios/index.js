@@ -29,3 +29,20 @@ valor impresso no console: Se e Poupança 154.5 e 206
 */
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*(Exerxio 3)Usando o for ... of  simplificamos a leitura dos elementos de uma array neste caso
+Fizemos a declaração dos seguintes array const números, const array1 const array2 que serão lidos
+por meio de um for...of que contém uma estrutura de controle seletivo if else que
+ajuda a saber quantos números pares existem nos números da array  e quantos
+existem números ímpares na array numéros e com o método .lenght podemos saber o número
+elementos totais de nossa array. 
+
+valor impresso no console:
+Quantidade total de numeros 14
+6 sao pares
+8 sao impar
+*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
