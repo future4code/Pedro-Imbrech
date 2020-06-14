@@ -131,8 +131,14 @@ tarefa, mas não conseguiu terminar. Dê uma olhada no código dele:
 
 }*/
 
-//<>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /*
+//(Exercicio 3)
+
+
 const quantidadeDeNumerosPares
 let i = 0
 while (i <= quantidadeDeNumerosPares) {
@@ -157,8 +163,9 @@ while (i <= quantidadeDeNumerosPares) {
 }
 console.log(espacio);*/
 
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//Exercicio 4
 /*
 
 let a, b, c
@@ -185,16 +192,23 @@ for (let i = 1; i <= 1; i++) {
     }
 }*/
 
+
+/* Algo esta malo en mi funcion que cuando trata de 
+englobar el codigo el, nose ejecuta de manera correcta solo 
+se ejecuta aplicando un for como esta arriba.*/
+
+/*
 let a, b, c
 
 a = Number(prompt('Inserir lado 1'));
 b = Number(prompt('Inserir lado 2'));
 c = Number(prompt('Inserir lado 3'));
 
+let equilatero = 0
+let isosceles = 0
+let escaleno = 0
 
 function calculatriangulo(a, b, c) {
-
-
 
     for (let i = 1; i <= 1; i++) {
 
@@ -216,7 +230,5 @@ function calculatriangulo(a, b, c) {
     }
 
 }
-let equilatero = 0
-let isosceles = 0
-let escaleno = 0
-console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);
+
+console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);*/
