@@ -86,3 +86,35 @@ TRUE
 TRUE
 
 */
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//(Exercicio 2). Cite 3 maneiras de se percorrer/iterar uma lista. Faça um programa para exemplificar.
+
+/*
+let numeros = [1, 55, 56, 55, 55, 55112, 25451, 51, 5, 1, 544, 626, 2, 2, 2, 5, 9, 44, 4]
+
+
+console.log("primeiro Exemplo")
+for (let i = 0; i <= 10; i++) {
+    console.log(numeros[i])
+
+
+}
+console.log("Segundo Exemplo")
+for (const iterator of numeros) {
+    console.log(numeros.length)
+}
+
+
+for (let index = 0; index < numeros.length; index++) {
+    const element = numeros[index];
+    console.log(index)
+}
+
+console.log("Tercer exemplo")
+for (const iterator of numeros) {
+    console.log(iterator)
+
+}*/
