@@ -118,3 +118,105 @@ for (const iterator of numeros) {
     console.log(iterator)
 
 }*/
+
+/*
+(Exercicio 3) Você tem que escrever um código que, dado um número N, ele imprima (no console)
+os N primeiros números pares (por exemplo, se N for 3, você deve imprimir 0, 2 e 4; 
+se N for 5, deve imprimir 0, 2, 4, 6 e 8).  Um colega seu disse que já começou esta 
+tarefa, mas não conseguiu terminar. Dê uma olhada no código dele:
+*/
+
+/*
+
+
+}*/
+
+//<>
+/*
+const quantidadeDeNumerosPares
+let i = 0
+while (i <= quantidadeDeNumerosPares) {
+    console.log(i * 2)
+}*/
+
+
+/*
+const quantidadeDeNumerosPares = Number(prompt("introduce un numero"))
+
+var i = 0,
+    espacio = "";
+while (i <= quantidadeDeNumerosPares) {
+    if (i % 2 === 0) {
+        if (i === quantidadeDeNumerosPares) {
+            espacio += i + ". ";
+        } else {
+            espacio += i + ", ";
+        }
+    }
+    i++;
+}
+console.log(espacio);*/
+
+
+
+/*
+
+let a, b, c
+let equilatero = 0
+let isosceles = 0
+let escaleno = 0
+a = Number(prompt('Inserir lado 1'));
+b = Number(prompt('Inserir lado 2'));
+c = Number(prompt('Inserir lado 3'));
+
+
+for (let i = 1; i <= 1; i++) {
+
+    console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);
+    if (a == b && b == c) {
+        console.log(' ele é chamado triângulo equilatero ');
+        equilatero = equilatero + 1;
+    } else if (a == b || b == c || a == c) {
+        console.log(' ele é chamado triângulos isosceles ');
+        isosceles = isosceles + 1;
+    } else {
+        console.log(' ele é chamado triângulos escaleno ');
+        escaleno = escaleno + 1;
+    }
+}*/
+
+let a, b, c
+
+a = Number(prompt('Inserir lado 1'));
+b = Number(prompt('Inserir lado 2'));
+c = Number(prompt('Inserir lado 3'));
+
+
+function calculatriangulo(a, b, c) {
+
+
+
+    for (let i = 1; i <= 1; i++) {
+
+
+        if (a == b && b == c) {
+            console.log(' ele é chamado triângulo equilatero ');
+            equilatero = equilatero + 1;
+        } else if (a == b || b == c || a == c) {
+            console.log(' ele é chamado triângulos isosceles ');
+            isosceles = isosceles + 1;
+        } else {
+            console.log(' ele é chamado triângulos escaleno ');
+            escaleno = escaleno + 1;
+        }
+
+        return equilatero;
+        return isosceles;
+        return escaleno;
+    }
+
+}
+let equilatero = 0
+let isosceles = 0
+let escaleno = 0
+console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);
