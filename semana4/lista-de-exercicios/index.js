@@ -294,7 +294,7 @@ saluda("Hello Future4");*/
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-
+//Exercicio 1
 //1. Explique com as suas palavras o que são e quando podemos/devemos utilizar arrays e objetos.
 
 /*Matrizes são um objeto do tipo lista e as usamos para armazenar um ou mais valores de tipos diferentes,
@@ -302,9 +302,11 @@ e um objeto nada mais é do que uma coleção de propriedades.*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
+//Exercicio 2
 2. Crie uma função chamada `criaRetangulo` que recebe como parâmetros dois lados (`lado1` e `lado2`) e 
 retorna um objeto com 4 informações: largura (`lado1`), altura (`lado2`), perímetro (`2 * (lado1 + lado2)`)
  e área (`lado1 * lado2`).*/
+/*
 function criaRetangulo(lado1, lado2) {
     let infor = {
         largura: 10,
@@ -312,4 +314,25 @@ function criaRetangulo(lado1, lado2) {
         perímetro: (`2 * (lado1 + lado2)`),
         area: (`lado1 * lado2`)
     }
+}*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//exercicio3
+/*Crie um objeto para representar seu filme favorito. Ele deve ter as seguintes
+propriedades: título, ano, diretor e atores/atrizes (lista com pelo menos 2 atores/atrizes).
+ Imprima na tela a seguinte string, baseada nos valores do objeto:
+Venha assistir ao filme NOME DO FILME, de ANO, dirigido por DIRETOR e
+ estrelado por ATOR 1, ATRIZ 2, ATOR n. A lista de atores/atrizes deve
+  ser impressa inteira, independente do tamanho da lista.*/
+
+/*
+let filmeFavorito = {
+    título: "Ruas pretas",
+    ano: 1992,
+    diretor: "cortes",
+    latores: ["lisa", "pedro"]
+
 }
+console.log(filmeFavorito)
+
+*/
