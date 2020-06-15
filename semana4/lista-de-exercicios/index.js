@@ -294,3 +294,22 @@ saluda("Hello Future4");*/
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//1. Explique com as suas palavras o que são e quando podemos/devemos utilizar arrays e objetos.
+
+/*Matrizes são um objeto do tipo lista e as usamos para armazenar um ou mais valores de tipos diferentes,
+e um objeto nada mais é do que uma coleção de propriedades.*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+2. Crie uma função chamada `criaRetangulo` que recebe como parâmetros dois lados (`lado1` e `lado2`) e 
+retorna um objeto com 4 informações: largura (`lado1`), altura (`lado2`), perímetro (`2 * (lado1 + lado2)`)
+ e área (`lado1 * lado2`).*/
+function criaRetangulo(lado1, lado2) {
+    let infor = {
+        largura: 10,
+        altura: 10,
+        perímetro: (`2 * (lado1 + lado2)`),
+        area: (`lado1 * lado2`)
+    }
+}
