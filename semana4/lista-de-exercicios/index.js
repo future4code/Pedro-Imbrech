@@ -277,3 +277,17 @@ let numero =function segundoMaiorsegundoMenor(numero1, numero2) {
   }
 }
 maiorDosTres(numero1, numero2);*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//(Exercicio 2)
+/*2. Escreva uma **função não nomeada** que faça um `alert("Hello Future4");`. Em seguida, invoque 
+essa função.*/
+/*
+var saluda = function(cumprimento) {
+    alert(cumprimento);
+
+}
+
+saluda("Hello Future4");*/
