@@ -238,7 +238,8 @@ console.log(' Triangulo ' + ' : ' + a + ' , ' + b + ' , ' + c);*/
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+/*
+//(Exercicio 5)
 let numero1 = Number(prompt("insere um primero numero"))
 let numero2 = Number(prompt("insere um segundo numero"))
 
@@ -251,4 +252,28 @@ if (numero1 < numero2) {
 
 console.log("15 nao e divisivel por 30")
 
-console.log("30 nao e divisivel por 15")
+console.log("30 nao e divisivel por 15")*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Exercícios de Funções
+
+//(Exercicio 1)
+/*1. Escreva uma função que receba um `array` de números e imprima na tela o segundo maior e o segundo
+ menor número. Em seguida, invoque essa função. (Não é permitido usar funções de ordenação de vetores.)
+
+/*
+
+let numero=[2,5,23,221,525,255,111,444,222,522,555,547,11,101]
+
+let numero =function segundoMaiorsegundoMenor(numero1, numero2) {
+  if ( numero1 > numero2 ) {
+    console.log( "O segundo maior e " );
+  } else if ( numero1 > numero2) {
+    console.log( "O segundo menor e " );
+  } else  {
+    ("Tudos sao iguais")
+  }
+}
+maiorDosTres(numero1, numero2);*/
