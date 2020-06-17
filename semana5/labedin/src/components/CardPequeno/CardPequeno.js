@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './CardPequeno.css'
 
 export function CardPequeno(props) {
     return ( <
@@ -9,3 +9,5 @@ export function CardPequeno(props) {
         /div>
     );
 }
+
+export default CardPequeno;
