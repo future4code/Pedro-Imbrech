@@ -1,0 +1,42 @@
+.post-container {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 28px;
+    background: #fff4f3;
+    box-shadow: 7px 7px 14px #f3dedb, -7px -7px 14px #f3e1df;
+}
+
+.post-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: rgb(85, 85, 85);
+}
+
+.post-footer {
+    border-radius: 28px;
+    background: #faf9f9;
+    box-shadow: 7px 7px 14px #e08f85, -7px -7px 14px #ffa79d;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.user-photo {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 3px solid #f39b91;
+    border-radius: 122px;
+    background: #f39b91;
+    box-shadow: 5px 5px 7px #e08f85, -5px -5px 7px #ffa79d;
+}
+
+.post-photo {
+    width: 100%;
+}
