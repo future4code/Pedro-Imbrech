@@ -10,20 +10,31 @@ return(
 <p>1. Qual o sua nome?</p>
 <input />
 
-<p>1 Qual sua idade?</p>
+<p>2. Qual sua idade?</p>
  <input/>
 
- <p>1 Qual a sua email?</p>
- <input/>
-
- <p>1 Qual a sua escolaridade?</p>
+ <p>3. Qual a sua email?</p>
  <input/>
  <br/>
  <br/>
- <button>Proxima estapa</button>
+ <select>
+
+ <p>4. Qual a sua escolaridade?</p>
+<option >Ensino médio incompleto</option>
+<option >Ensino médio completo</option>
+<option >Ensino superior incompleto</option>
+<option >Ensino superior completo</option>
+</select>
+
+
+ 
+ <br/>
+ <br/>
+ <button onClick={this.props.handleClickEtapas}>Proxima estapa</button>
 </div>
 
 
 );
 }
 }
+

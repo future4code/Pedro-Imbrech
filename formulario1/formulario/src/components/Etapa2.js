@@ -16,7 +16,7 @@ return(
 
 <br/>
 <br/>
-<button>Proxima estapa</button>
+<button onClick={this.props.handleClickEtapa2}>Proxima estapa</button>
 </div>
 
 );

@@ -12,7 +12,16 @@ return(
 <input/>
 
 <p>6. Você fez algum curso complementar?</p>
-<input/>
+<br/>
+ <br/>
+ <select>
+
+ 
+<option >Nenhum</option>
+<option >Curso Tecnico</option>
+<option >Curso de Ingles</option>
+
+</select>
 
 <br/>
 <br/>
