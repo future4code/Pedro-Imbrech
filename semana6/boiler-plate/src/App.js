@@ -19,36 +19,83 @@ const InputsContainer = styled.div`
 `
 
 class App extends React.Component {
-    state = {
+  
+    
+      state = {
       tarefas: [],
-      inputValue: '',
-      filter: ''
+      inputValue: "",
+      filter: ""
     }
+  
 
   componentDidUpdate() {
-
-  };
-
-  componentDidMount() {
-
-  };
-
-  onChangeInputValue = (event) => {
-    this.setState({ inputValue: event.target.value});
+    
+      localStorage.setItem("tarefas", JSON.stringify(this.state.tarefas));
     
   }
 
+ componentDidMount() {
+   
+      const tarefasString = localStorage.getItem("tarefas");
+
+      if (tarefasString) {
+        const tarefas = JSON.parse(tarefasString);
+
+        this.setState({ tarefas });
+      }
+    
+  }
+
+
+
+  criaTarefa = event => {
+ 
+    //para limpar los valores de estado que estan en os input 
+    this.setState({inputValue:" "})
+  }
+
+
+  onChangeInput = event => {
+    this.setState({ inputValue: event.target.value });
+   
+  };
+  
+
+
   criaTarefa = () => {
+    if (this.state.inputValue) {
+      
+      const novaTarefa = {
+        texto: this.state.inputValue,
+        completa: false
+        
+      };
 
-  }
+      this.setState({
+        tarefas: [...this.state.tarefas, novaTarefa],
+        inputValue: ""
+        
+      });
+    }
+  };
 
-  selectTarefa = (id) => {
+  selectTarefa = id => {
+  const newtarefas = this.state.tarefas.map(tarefa => {
+  if (tarefa.id === id) {
+  return {
+            ...tarefa,
+       completa: !tarefa.completa
+  };
+     }
+      return tarefa;
+    });
 
-  }
+    this.setState({ tarefas: newtarefas });
+  };
 
-  onChangeFilter = (event) => {
-
-  }
+  onChangeFilter = event => {
+    this.setState({ filter: event.target.value });
+  };
 
   render() {
     const listaFiltrada = this.state.tarefas
