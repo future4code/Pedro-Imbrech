@@ -19,83 +19,7 @@ const InputsContainer = styled.div`
 `
 
 class App extends React.Component {
-  
-    
-      state = {
-      tarefas: [],
-      inputValue: "",
-      filter: ""
-    }
-  
 
-  componentDidUpdate() {
-    
-      localStorage.setItem("tarefas", JSON.stringify(this.state.tarefas));
-    
-  }
-
- componentDidMount() {
-   
-      const tarefasString = localStorage.getItem("tarefas");
-
-      if (tarefasString) {
-        const tarefas = JSON.parse(tarefasString);
-
-        this.setState({ tarefas });
-      }
-    
-  }
-
-
-
-  criaTarefa = event => {
- 
-    //para limpar los valores de estado que estan en os input 
-    this.setState({inputValue:" "})
-  }
-
-
-  onChangeInput = event => {
-    this.setState({ inputValue: event.target.value });
-   
-  };
-  
-
-
-  criaTarefa = () => {
-    if (this.state.inputValue) {
-      
-      const novaTarefa = {
-        texto: this.state.inputValue,
-        completa: false
-        
-      };
-
-      this.setState({
-        tarefas: [...this.state.tarefas, novaTarefa],
-        inputValue: ""
-        
-      });
-    }
-  };
-
-  selectTarefa = id => {
-  const newtarefas = this.state.tarefas.map(tarefa => {
-  if (tarefa.id === id) {
-  return {
-            ...tarefa,
-       completa: !tarefa.completa
-  };
-     }
-      return tarefa;
-    });
-
-    this.setState({ tarefas: newtarefas });
-  };
-
-  onChangeFilter = event => {
-    this.setState({ filter: event.target.value });
-  };
 
   render() {
     const listaFiltrada = this.state.tarefas
@@ -114,8 +38,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Lista de tarefas</h1>
         <InputsContainer>
-          <input value={this.state.inputValue} onChange={this.onChangeInput}   value={this.state.Input2}/>
-          <button onClick={this.criaTarefa}>Adicionar</button>
+
         </InputsContainer>
         <br/>
 
@@ -127,6 +50,7 @@ class App extends React.Component {
             <option value="completas">Completas</option>
           </select>
         </InputsContainer>
+
         <TarefaList>
           {listaFiltrada.map(tarefa => {
             return (
@@ -136,6 +60,7 @@ class App extends React.Component {
               >
                 {tarefa.texto}
               </Tarefa>
+
             )
           })}
         </TarefaList>
