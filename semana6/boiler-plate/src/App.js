@@ -19,39 +19,7 @@ const InputsContainer = styled.div`
 `
 
 class App extends React.Component {
-    state = {
-      tarefas: [],
-      inputValue: '',
-      filter: '',
-      
-    }
 
-  componentDidUpdate() {
-
-  };
-
-  componentDidMount() {
-
-  };
-
-  onChangeInput = (event) => {
-  this.setState({inputValue: event.target.value});
-  }
-
-  criaTarefa = event => {
-  console.log(this.state.inputValue)
-  
-  this.setState({inputValue:""})
-}
-  selectTarefa = (id) => {
-
-  }
-
-  onChangeFilter = (event) => {
-
-  }
-
-  
 
   render() {
     const listaFiltrada = this.state.tarefas
@@ -70,12 +38,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Lista de tarefas</h1>
         <InputsContainer>
-      
-          <input value={this.state.inputValue} onChange={this.onChangeInput}/>
-          
-          <button onClick={this.criaTarefa}>Adicionar</button>
 
-          
         </InputsContainer>
         <br/>
 
@@ -88,8 +51,6 @@ class App extends React.Component {
           </select>
         </InputsContainer>
 
-        <p>{this.state.inputValue}</p>
-
         <TarefaList>
           {listaFiltrada.map(tarefa => {
             return (
@@ -99,7 +60,7 @@ class App extends React.Component {
               >
                 {tarefa.texto}
               </Tarefa>
-              
+
             )
           })}
         </TarefaList>
