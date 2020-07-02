@@ -1,23 +1,83 @@
-import React from 'react';
-import styled from 'styled-components'
-import axios from 'axios'
+import React from "react";
+import styled from "styled-components";
+import axios from "axios";
+
+const axiosConfig={
+headers:{
+  Authorization: "nome-artista-genero"
+ }
+}
 
 
+const baseUrl =
+  "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
 
-//1)el primer paso es convertir un componente de clase en un componente funcional.
-export class UserListPage extends React.Component {
+const DeleteButton = styled.span`
+  color: red;
+`;
 
-//2)SignUpPage e UserListPage se va a comunicar entre si entoo hay que fazer uma renderizacao condicional
+class UsersListPage extends React.Component {
+  state = {
+    usersList: [
 
-  render(){
+{
+    nome:"pedro",
+    email:"jdkjednkej@gmail.com"
+}
 
-  return (
-    <div>
-     UserListPage
-    </div>
 
+    ]
+  };
+
+  componentDidMount = () => {
+    this.getAllUsers();
+  };
+
+  getAllUsers = () => {
+    
+
+    axios
+      .get(baseUrl, axiosConfig)
+      .then(response => {
+        this.setState({ usersList: response.data });
+      })
+      .catch(err => {
+        console.log(err.message);
+      });
+  };
+
+  deleteUser = userId => {
+    axios
+      .delete(`${baseUrl}/${userId}`, axiosConfig)
+      .then(() => {
+        this.getAllUsers();
+      })
+      .catch(err => {
+        console.log(err.message);
+      });
+  };
+
+  render() {
+    return (
+      <ul>
+        {this.state.usersList.length === 0 && <div>Carregando...</div>}
+        {this.state.usersList.map(user => {
+          return (
+            <li key={user.id}>
+              {user.name}
+              <DeleteButton
+                onClick={() => {
+                  this.deleteUser(user.id);
+                }}
+              >
+                X
+              </DeleteButton>
+            </li>
+          );
+        })}
+      </ul>
     );
   }
 }
 
-export default UserListPage;
+export default UsersListPage;
