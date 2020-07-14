@@ -11,6 +11,13 @@ import iconeComentario from '../../img/comment_icon.svg'
 const Post = (props) => {
 
 
+  const [curtido, setCurtido] = useState(false)
+  const [numeroCurtidas, setnumeroCurtidas] = useState(false)
+  const [comentando, setcomentando] = useState(false)
+  const [numeroComentarios, setnumeroComentarios] = useState(false)
+  const [comentarios, setcomentarios] = useState(false)
+
+  
   const onClickCurtida = () => {
   };
 
