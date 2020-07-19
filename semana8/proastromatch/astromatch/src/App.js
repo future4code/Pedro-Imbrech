@@ -1,46 +1,26 @@
 
-import React from 'react'
-import { create } from 'jss'
-import { MuiThemeProvider, createGenerateClassName, jssPreset } from '@material-ui/core/styles'
-import { createMuiTheme } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Pageuno from './components/Pageuno'
+import React from 'react';
+import './App.css';
+import Cardprimeiro from './Components/Cardprimeiro';
+import styled from 'styled-components';
 
-const generateClassName = createGenerateClassName()
-const jss = create({
-	...jssPreset(),
-	insertionPoint: document.getElementById('jss-insertion-point'),
-})
+const Mastermain = styled.div`
+align-items: center;
+height: 100vh;
+display: flex;
+justify-content: center;
 
-const theme = createMuiTheme({
-	palette: {
-		primary: {
-		main: "#6A34BB" //ESTE COLOR PUEDE CAMBIAR
-		},
-		secondary: {
-		main:"#ffffff" //ESTE COLOR PUEDE CAMBIAR 
-		}
-	}
-})
+`
 
 function App() {
-	return (
-
-			<MuiThemeProvider theme={theme}>
-				<CssBaseline />
-			
-			
-        <Pageuno/>
-
-			</MuiThemeProvider>
-
-	)
+  return (
+    <Mastermain className="App">
+      <Cardprimeiro />
+    </Mastermain>
+  );
 }
 
-export default App
-
-
-
+export default App;
 
 
 
