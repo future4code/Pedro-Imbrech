@@ -1,13 +1,15 @@
 import React from 'react'
+    import { useParams } from "react-router";
 
-export function ApplicationFormPage (){
+    const ApplicationFormPage = () => {
+      const pathParams = useParams();
     return(
         <div>
-    
-
-    //Para o usuário se candidatar à viagem, página com o form de inscrição.
+       <p>tela de cadastro</p>
+      <p>Linguagem selecionada: {pathParams.linguagem}</p>
+        <h1>cadastro </h1>
         </div>
     )
 }
 
-export default ApplicationFormPage 
+export default ApplicationFormPage;
