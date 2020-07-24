@@ -1,5 +1,25 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import styled from 'styled-components'
+import naveespacial from '../images/naveespacial.jpg'
+import Button from '@material-ui/core/Button';
+
+
+const DivColorbackground= styled.div`
+
+
+`
+
+const Sh1 = styled.h1`
+
+  color:pink;
+`
+
+
+
+
+
+
 
 
 const HomePage = () => {
@@ -15,19 +35,34 @@ const HomePage = () => {
 
 
   return (
-    <div>
+    <DivColorbackground>
+      <div>
+      <Sh1>LABEX</Sh1>
       <p>Home</p>
 
-      <p>ir a login</p>
-      <button onClick={goToLoginPage}>Ir para página de sobre</button>
 
+   <p>ir a login</p>
+      <Button variant="contained" color="primary"   onClick={goToLoginPage}>
+        Login
+      </Button>
+
+
+     
+     
       <hr/>
 
       <p>Cadastro</p>
-      <button onClick={goToApplicationFormPage}>Ir para página de cadastro</button>
 
+      <Button variant="contained" color="primary"   onClick={goToApplicationFormPage}>
+      Create your  Account
+      </Button>
+      
 
+      <hr/>
+      <img src={naveespacial} height="400px" alt="Match Icon"/>
     </div>
+
+    </DivColorbackground>
   );
 };
 
