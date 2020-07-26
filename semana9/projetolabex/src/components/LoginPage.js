@@ -1,24 +1,66 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
+import axios from "axios"
+import { useHistory } from "react-router-dom";
+import { createGlobalStyle } from 'styled-components'
+import {Header} from '../components/Header'
 
 
-
-
+const Buttonx=styled.button`
+margin-bottom:20px;
+border:none;
+width:200px;
+height:50px;
+color:#444444;
+border-radius: 50px;
+background: black;
+box-shadow:  5px 5px 10px #363636, 
+             -5px -5px 10px #525252;     
+`
+const Position = styled.div`
+width:100vw;
+height:100vh;
+background-color:#444444;
+`
 
 const Positionformtwo= styled.div`
+ 
 justify-content:center;
 display:flex;
-padding:60px;
+padding:100px;
 `
 
 const Form= styled.form`
 justify-content:center;
 display:flex;
 flex-direction:column;
-width:300px;
-height:500px;
+
+
 `
+
+const Inputuno = styled.input`
+margin-bottom:20px;
+border:none;
+width:200px;
+height:50px;
+border-radius: 4px;
+background: #444444;
+box-shadow:  5px 5px 8px #2f2f2f, 
+             -5px -5px 8px #595959;
+`
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin:0;  
+   
+  }
+`
+
+
+
+const baseUrl =
+"https://us-central1-labenu-apis.cloudfunctions.net/labeX/pedro-turing";
 
 const useForm = initialValues => {
 
@@ -31,30 +73,8 @@ const useForm = initialValues => {
   };
 
 
-  
   return { form, onChange };
 };
-
-
-const baseUrl=
-"https://us-central1-labenu-apis.cloudfunctions.net/labeX/pedro-turing";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -62,8 +82,9 @@ const baseUrl=
 
 export default function LoginPage() {
 
-const [email, setEmail]= useState("")
-const [password, setPassword]= useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const history = useHistory();
 
 const onChangeEmail = (e) =>{
 
@@ -76,15 +97,26 @@ const onChangePassword = (e) =>{
   setPassword(e.target.value)
 }
 
-console.log(email, password)
+//console.log(email, password)
+
+const handleLogin = () => {
+
+  const body ={
+    email: email,
+    password:password
+  }
 
 
-
-
-
-
-
-
+  axios
+      .post(`${baseUrl}/login`, body)
+      .then(response => {
+        window.localStorage.setItem("token", response.data.token);
+        history.push("/trip");
+      })
+      .catch(err => {
+        console.log(err.message);
+      });
+  };
 
 
 
@@ -109,13 +141,18 @@ console.log(email, password)
 
   return (
 
-    
+<React.Fragment>
+
+    <GlobalStyle/> 
+    <Position>
+    <Header/> 
+
     <Positionformtwo> 
     <Form onSubmit={handleSave}>
  
 
  
-      <input
+      <Inputuno
         name="email"
         placeholder="E-mail"
         type="email"
@@ -126,7 +163,7 @@ console.log(email, password)
         required
       />
 
-    <input
+    <Inputuno
         name="password"
         placeholder="Password"
         type="Password"
@@ -141,11 +178,16 @@ console.log(email, password)
  
 
 
-  <button>Salvar</button>
+  <Buttonx onClick={handleLogin}>Fazer Login</Buttonx>
 
     </Form>
     </Positionformtwo>
-   
+  </Position>
+</React.Fragment>
+
+
 
   );
 }
+
+

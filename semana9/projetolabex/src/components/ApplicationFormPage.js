@@ -1,24 +1,73 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 import styled from "styled-components";
+import { createGlobalStyle } from 'styled-components'
+import {Header} from '../components/Header'
 
 
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin:0;  
+  
+  }
+`
 
+const Position = styled.div`
+width:100vw;
+height:100vh;
+background-color:#444444;
+`
 
-const Positionformtwo= styled.div`
+const Inputuno = styled.input`
+border:none;
+width:200px;
+height:50px;
+border-radius: 4px;
+background: #444444;
+box-shadow:  5px 5px 8px #2f2f2f, 
+             -5px -5px 8px #595959;
+`
+
+const Positionformtwo= styled.form`
 justify-content:center;
 display:flex;
-padding:60px;
+margin-top:45px;
+
 `
 
 const Form= styled.form`
 justify-content:center;
+align-items:center;
 display:flex;
 flex-direction:column;
 width:300px;
 height:500px;
-border: 1px solid black;
 
+border-radius: 10px;
+background: #444444;
+box-shadow: inset 8px 8px 16px #3d3d3d, 
+            inset -8px -8px 16px #4b4b4b;
+
+`
+
+const FortInttwo = styled.div`
+
+width:200px;
+height:400px;
+
+`
+
+const Buttonx=styled.button`
+
+border:none;
+width:200px;
+height:50px;
+color:#444444;
+border-radius: 50px;
+background: black;
+box-shadow:  5px 5px 10px #363636, 
+             -5px -5px 10px #525252;
+     
 `
 
 const useForm = initialValues => {
@@ -57,12 +106,15 @@ export default function ApplicationFormPage() {
   };
 
   return (
-
-    
+<React.Fragment>
+    <GlobalStyle/>
+    <Position>
+    <Header/> 
     <Positionformtwo> 
     <Form onSubmit={handleSave}>
  
-    <input
+    
+    <Inputuno
         name="primeiroNome"
         placeholder="Primeiro Nome"
         pattern={"[A-Za-z]{3,}"}
@@ -71,8 +123,9 @@ export default function ApplicationFormPage() {
         onChange={handleInputChange}
         required
       />
- 
-      <input
+   <br/>
+   <br/>
+      <Inputuno
         name="email"
         placeholder="E-mail"
         type="email"
@@ -82,7 +135,7 @@ export default function ApplicationFormPage() {
       />
    <br/>
    <br/>
-      <input
+      <Inputuno
         name="senha"
         placeholder="Senha"
         type="Password"
@@ -95,11 +148,12 @@ export default function ApplicationFormPage() {
   <br/>
 
     
-  <button>Salvar</button>
-
+  <Buttonx>Salvar</Buttonx>
+ 
     </Form>
     </Positionformtwo>
-   
+    </Position> 
+  </React.Fragment> 
 
   );
 }

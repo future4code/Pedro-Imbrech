@@ -6,6 +6,8 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
 import LoginPage from "./LoginPage";
 import ApplicationFormPage from "./ApplicationFormPage";
+import TripDetailPage from "./TripDetailsPage";
+
 
 export function Router(){
 
@@ -28,10 +30,18 @@ export function Router(){
             {/* O que será renderizado quando a rota for desconhecida */}
             <h3>Eita Giovana, o forninho caiu (404)</h3>
           </Route>
-        </Switch>
+        
     
+       
+      
+        <Route exact path="/">
+          <LoginPage />
+        </Route>
+        <Route exact path="/trip">
+          <TripDetailPage />
+        </Route>
 
-
+</Switch>
 
 
   </BrowserRouter>
