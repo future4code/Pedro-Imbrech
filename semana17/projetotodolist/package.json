@@ -1,0 +1,23 @@
+{
+  "name": "projetotodolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^14.10.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.0",
+    "knex": "^0.21.5",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1"
+  }
+}
