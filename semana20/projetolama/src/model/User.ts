@@ -1,6 +1,9 @@
 export class User{
     constructor(
+    private generomusical:string,
+    private nomeresponsabel:string,
     private id: string,
+    private namebanda: string,
     private name: string,
     private email: string,
     private password: string,
@@ -13,6 +16,17 @@ export class User{
 
     getName(){
         return this.name
+    }
+    getNamebanda(){
+        return this.namebanda
+    }
+
+    getGeneromusical(){
+        return this.generomusical
+    }
+
+    getNomeresponsabel(){
+        return this.nomeresponsabel
     }
 
     getEmail(){
@@ -59,7 +73,7 @@ export class User{
     }
 
     static toUserModel(user: any): User {
-        return new User(user.id, user.name, user.email, user.password, User.stringToUserRole(user.role));
+        return new User(user.namebanda, user.generomusical, user.nomeresponsabel,  user.id, user.name, user.email, user.password, User.stringToUserRole(user.role));
       }
 
 
@@ -75,6 +89,12 @@ export interface UserInputDTO{
 export interface LoginInputDTO{
     email: string;
     password: string;
+}
+
+export interface RegisterbandaInputDTO{
+    namebanda: string;
+    generomusical: string;
+    nomeresponsabel: string;
 }
 
 export enum UserRole{

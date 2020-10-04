@@ -1,12 +1,26 @@
-import { UserInputDTO, LoginInputDTO } from "../model/User";
+import { UserInputDTO, LoginInputDTO, RegisterbandaInputDTO } from "../model/User";
 import { UserDatabase } from "../data/UserDatabase";
+import { RegisterDatabase } from "../data/RegisterDatabase";
 import { IdGenerator } from "../services/IdGenerator";
 import { HashManager } from "../services/HashManager";
 import { Authenticator } from "../services/Authenticator";
 
 export class UserBusiness {
+    async createBanda(user: RegisterbandaInputDTO) {
+       
+
+        const idGenerator = new IdGenerator();
+        const id = idGenerator.generate();
+        
+        const registerDatabase = new RegisterDatabase();
+         await registerDatabase.createBanda(id, user.namebanda, user.generomusical, user.nomeresponsabel);
+ 
+         return id;
+    }
+
 
     async createUser(user: UserInputDTO) {
+
 
         const idGenerator = new IdGenerator();
         const id = idGenerator.generate();

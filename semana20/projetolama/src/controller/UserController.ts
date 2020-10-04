@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { UserInputDTO, LoginInputDTO} from "../model/User";
+import { UserInputDTO, LoginInputDTO, RegisterbandaInputDTO} from "../model/User";
 import { UserBusiness } from "../business/UserBusiness";
 import { BaseDatabase } from "../data/BaseDatabase";
 
@@ -25,6 +25,31 @@ export class UserController {
 
         await BaseDatabase.destroyConnection();
     }
+
+
+
+    async registerbanda(req: Request, res: Response) {
+        try {
+
+                const input: RegisterbandaInputDTO = {
+                namebanda: req.body.namebanda,
+                generomusical: req.body.generomusical,
+                nomeresponsabel: req.body.nomeresponsabel,
+              
+            }
+
+            const userBusiness = new UserBusiness();
+            const token = userBusiness.createBanda(input);
+
+            res.status(200).send({ token });
+
+        } catch (error) {
+            res.status(400).send({ error: error.message });
+        }
+
+        await BaseDatabase.destroyConnection();
+    }
+
 
     async login(req: Request, res: Response) {
 
