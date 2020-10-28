@@ -1,0 +1,2 @@
+var color: string | "azul";
+
